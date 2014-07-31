@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Calc
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Calculator
+    h3 #{opN} #{x} #{op} #{y} #{eql} #{res}
+    form(method='POST', action='/calc')
+      //- textarea(name='blah')
+      br
+      label X
+      input(type='text', name='x', placeholder='x', autofocus=true)
+      br
+      label O
+      select(name='op')
+        option +
+        option -
+        option *
+        option /
+      //- input(type='text', name='op', placeholder='+ - * /')
+      br
+      label Y
+      input(type='text', name='y', placeholder='y')
+      br
+      button Calc
+
+
