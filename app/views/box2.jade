@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Boxes
+    link(rel='stylesheet', href='/css/boxstyle.css')
+  body
+    h1 Boxes
+    a(href='/boxes') Link
+    .wrapper
+      for box in boxes
+        - console.log(box)
+        div(style='display:inline-block;width:#{box.width}px;height:#{box.height}px;background-color:#{box.color};')
+

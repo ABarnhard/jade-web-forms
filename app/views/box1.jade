@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Boxes
+    link(rel='stylesheet', href='/css/boxstyle.css')
+  body
+    h1 Boxes
+    form(method='POST', action='/boxes')
+      table
+        tr
+          td
+            label # of Boxes
+          td
+            input(type='text', name='box', placeholder='10', value='10')
+        tr
+          td
+            label Width
+          td
+            input(type='text', name='width', placeholder='50-100', value='50-100')
+        tr
+          td
+            label Height
+          td
+            input(type='text', name='height', placeholder='50-100', value='50-100')
+        tr
+          td
+            label Colors:
+          td
+            textarea(name='color') blue,green,yellow,orange,pink,red
+      table
+      br
+      button Generate Boxes!!!
+
+
+
